@@ -1,16 +1,16 @@
-function InputNumber(a, b, c) {
-  if (a > 100) return;
-  if (b > 100) return;
-  if (c > 100) return;
+function solution(a, b, c) {
+  if (a > 100) console.log('100보다 수가 큽니다.');
+  if (b > 100) console.log('100보다 수가 큽니다.');
+  if (c > 100) console.log('100보다 수가 큽니다.');
 
-  MinNum(a, b, c);
+  inspection(a, b, c);
 }
 
-function MinNum(a, b, c) {
-  let result = a;
-  if (a > b) result = b;
-  if (result > c) result = c;
-  console.log(result);
+function inspection(a, b, c) {
+  let min = a;
+  if (a > b) min = b;
+  if (min > c) min = c;
+  console.log(min);
 }
 
-InputNumber(4, 2, 11);
+solution(4, 2, 11);
