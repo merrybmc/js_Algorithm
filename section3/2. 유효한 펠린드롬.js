@@ -5,6 +5,7 @@
 // 알파벳 이외의 문자들은 무시
 
 function solution(str) {
+  // 정규표현식
   str = Array.from(str.toLowerCase().replace(/[^a-z]/g, ''));
   let reverse = [...str].reverse();
   let result = 'YES';
