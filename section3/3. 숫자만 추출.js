@@ -4,19 +4,17 @@
 function solution(str) {
   let answer = '';
 
-  //   for (let x of str) {
-  // console.log(typeof x);
-  // if (!isNaN(x)) answer += x;
-  //   }
-
-  for (i = 0; i < str.length; i++) {
-    // console.log(typeof str[i]);
-    // console.log(str[i] === isNaN);
-
-    if (str[i] === isNaN) answer += str[i];
+  for (let x of str) {
+    // console.log(typeof x);
+    // console.log(!isNaN(x));
+    // if (!isNaN(x)) answer += x;
   }
 
-  return console.log(answer);
+  for (i = 0; i < str.length; i++) {
+    if (!isNaN(str[i])) answer += str[i];
+  }
+
+  return console.log(parseInt(answer));
 }
 
 let str = 'g0e00n2T0s8eSoft';
